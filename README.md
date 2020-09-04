@@ -569,11 +569,7 @@ console.log(numeros) // [2, 5, 9]
 Refatorando para JS moderno:
 
 ```js
-function funcaoDeComparacao(a, b) {
-  return a - b
-}
-
-numeros.sort(funcaoDeComparacao)
+numeros.sort((a, b) => a - b)
 
 console.log(numeros) // [2, 5, 9]
 ```

@@ -37,8 +37,8 @@ Precisamos criar uma solução de um carrinho de compras.
   - a data do pedido
 
 - A classe `Pedido` deve conter os métodos:
-  - que calcule a quantidade de ítens totais no carrinho
-  - que calcule o valor subtotal (quantidade de ítens multiplicado pelo preço unitário)
+  - que calcule a quantidade de itens totais no carrinho
+  - que calcule o valor subtotal (quantidade de itens multiplicado pelo preço unitário)
   - que calcule o valor de desconto (subtotal multiplicado pelo desconto)
   - que calcule o valor total (subtotal menos o desconto)
 
