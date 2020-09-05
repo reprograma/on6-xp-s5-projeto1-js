@@ -33,6 +33,7 @@
     - [sort](#sort)
     - [reduce](#reduce)
 
+11. [Spread operator](#spread-operator)
 
 ---
 
@@ -528,6 +529,9 @@ MDN: [filter]()
 ---
 
 #### sort
+
+Vídeo da dança: [youtube](https://www.youtube.com/watch?v=lyZQPjUT5B4)
+
 O método `sort` recebe uma função de callback opcional. Caso a função não seja fornecida, o array segue a ordenação dos caracteres Unicode.
 > Se o parâmetro funcaoDeComparacao é fornecido, o array será ordenado de acordo com o valor de retorno da funcaoDeComparacao. Considerando que a e b são dois elementos sendo comparados, então:
 >  - Se `funcaoDeComparacao(a, b)` for menor que 0, ordena `a` para um índice anterior a `b`, i.e. `a` vem primeiro.
@@ -615,3 +619,29 @@ console.log(numerosSomados) // 16
 MDN: [reduce](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
 ---
+
+### Spread operator
+
+Podemos "copiar" todas as propriedades existentes dentro de um objeto e repassá-los para num novo objeto:
+
+```js
+const obj1 = {
+  nome: 'bola',
+  tipo: 'plástico',
+  peso: 1,
+}
+
+const obj2 = { ...obj1 }
+
+const obj3 = {
+  ...obj1,
+  cor: 'amarela'
+}
+
+console.log(obj2) // { nome: 'bola', tipo: 'plástico', peso: 1 }
+
+console.log(obj3) // { nome: 'bola', tipo: 'plástico', peso: 1, cor: 'amarela' }
+```
+
+
+Fonte MDN: [spread operator](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
